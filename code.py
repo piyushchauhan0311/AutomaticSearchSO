@@ -37,7 +37,6 @@ out, err = execute_return("python C:/Users/Piyush/Desktop/test.py")
 error = err.decode("utf-8").strip().split("\r\n")[-1]
 print(error)
 
-
 if error:
 	filter_error = error.split(":")
 	json1 = mak_req(filter_error[0])
