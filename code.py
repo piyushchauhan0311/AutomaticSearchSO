@@ -38,8 +38,6 @@ error = err.decode("utf-8").strip().split("\r\n")[-1]
 print(error)
 
 
-# A simple if condition, if error is found then execute 2nd and
-# 3rd function, otherwise print "No error".
 if error:
 	filter_error = error.split(":")
 	json1 = mak_req(filter_error[0])
